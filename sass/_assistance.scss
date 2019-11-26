@@ -1,0 +1,44 @@
+.assistance{
+	background:transparent url('../img/bg/assistance.jpg') center top no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 150px 0;
+	text-align: center;
+}
+.assistance__title{
+	font-size: 8.125rem;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 900;
+	margin-bottom: 90px;
+	line-height: 1.1;
+	span{
+		font-weight: 200;
+	}
+}
+
+.access{
+	position: relative;
+	line-height: 0;
+	img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+}
+
+.access__title{
+	position: absolute;
+	bottom: 8%;
+	left: 0;
+	right: 0;
+	&.title{
+		padding: 0;
+		line-height: 1.2;
+	}
+	span{
+		display: block;
+	}
+}
+

@@ -1,0 +1,278 @@
+/*popup*/
+#overlay{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(#000, .7);
+	z-index: 100;
+	display: none;
+} 
+.popup{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -300%);
+	padding: 30px;
+	background-color: #fff;
+	box-shadow: 0 28px 81px rgba(25, 25, 25, 0.58);
+	width: 90%;
+	max-width: 510px;
+	max-height: 90vh;
+	overflow-y: auto;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .5s;
+	z-index: 110;
+	&.active{
+		transform: translate(-50%, -50%);
+		opacity: 1;
+		visibility: visible;
+	}
+	span.input.error{
+		&::after{
+			content: 'Error';
+			display: inline-block;
+			font-size: 13px;
+			padding: 5px 14px;
+			border-radius: 5px;
+			background-color: #ff0000;
+			color:#fff;
+			position: absolute;
+			right: 0;
+			top: 0;
+			transform: translateY(-50%);
+		}
+		.input__label-content{
+			color: #ff0000;
+		}
+	}
+	.agree{
+		margin-top: -15px;
+	}
+	.btn{
+		font-size: 18px;
+	}
+	.socio{
+		justify-content: flex-start;
+		margin-bottom: 25px;
+		li:first-child{
+			margin-left: 0;
+		}
+		li{
+			a{
+				width: 40px;
+				height: 40px;
+			}
+		}
+	}
+}
+.close{
+	width: 16px;
+	height: 16px;
+	background:transparent url('../img/ico/close.svg') left top no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	&:hover{
+		opacity: .7;
+	}
+}
+.popup__top{
+	padding-bottom: 25px;
+	border-bottom: 1px solid #dadee7;
+	margin-bottom: 35px;
+}
+.popup__logo{
+	margin-right: 18px;
+	img{
+		max-width: 70px;
+	}
+}
+.popup__title{
+	
+	span{
+		display: block;
+	}
+}
+.popup__caption{
+	font-size: 30px;
+	color: #171717;
+}
+b{
+	font-weight: 700;
+}
+.popup__subtitle,
+.popup__bottom__notice{
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.agree{
+	font-size: 15px;
+	color:#000;
+	margin-bottom: 35px;
+	input{
+		display: none;
+		&:checked + label{
+			&::before{
+				width: 24px;
+				height: 24px;
+				background:transparent url('../img/ico/check_black.svg') left top no-repeat;
+				border: none;
+			}
+		}
+	}
+	label{
+		display: flex;
+		align-items: center;
+		font-weight: 400;
+		cursor: pointer;
+		letter-spacing: 0.75px;
+		&::before{
+			content: '';
+			flex: none;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			border: 2px solid #1b1b1b;
+			background-size: contain;
+			margin-right: 20px;
+		}
+		&:hover{
+			opacity: .8;
+		}
+	}
+}
+
+.form__notice{
+	margin: 35px 0;
+	text-align: center;
+	font-size: 13px;
+	font-weight: 400;
+	color: #232323;
+	letter-spacing: 0.65px;
+	a{
+		color: #0096ff;
+		&:hover{
+			color: #0844b3;
+		}
+	}
+}
+
+.popup__notice{
+	font-size: 13px;
+	text-align: center;
+	font-weight: 400;
+	letter-spacing: 0.65px;
+	a{
+		font-weight: 700;
+		color: #000;
+		&:hover{
+			color: #0844b3;
+		}
+	}
+}
+
+.forgot-pass{
+	display: block;
+	margin-top: -25px;
+	margin-bottom: 30px;
+	font-size: 13px;
+	color: #000;
+	font-weight: 400;
+	letter-spacing: 0.65px;
+	text-decoration: underline;
+	&:hover{
+		text-decoration: none;
+		color: #0844b3;
+	}
+}
+#login{
+	background:#fff url('../img/bg/login_bg.jpg') 100% 100% no-repeat;
+	background-size: contain;
+	.popup__success{
+		padding-top: 45px;
+	}
+}
+.popup__content{
+	position: relative;
+	&.active{
+		.popup__success{
+			z-index: 2;
+			opacity: 1;
+			visibility: visible;
+			overflow: visible;
+		}
+		.popup__form{
+			opacity: 0;
+			z-index: 0;
+		}
+	}
+}
+.popup__success{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 0;
+	text-align: center;
+	z-index: -1;
+	opacity: 0;
+	overflow: hidden;
+	visibility: hidden;
+	transition: all .2s;
+}
+.success-img{
+	display: block;
+	margin: 0 auto 23px;
+	width: 60px;
+}
+.success__title{
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: #000;
+	margin-bottom: 15px;
+}
+.success__user{
+	font-size: 13px;
+	font-weight: 400;
+	padding-bottom: 30px;
+}
+.success__notice{
+	font-size: 13px;
+	letter-spacing: 0.65px;
+	font-weight: 400;
+	padding-top: 25px;
+	border-top: 1px solid #d5dae4;
+}
+#password{
+	.success-img{
+		width: 30px;
+		margin-bottom: 15px;
+	}
+	.success__title{
+		font-size: 20px;
+		margin-bottom: 12px;
+	}
+	.success__user{
+		padding-bottom: 0;
+		b{
+			display: block;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+

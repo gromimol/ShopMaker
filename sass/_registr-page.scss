@@ -1,0 +1,27 @@
+/*registr-page*/ 
+.registr-page{
+	height: 100vh;
+	overflow: hidden;
+}
+.registr__form{
+	width: 50%;
+	max-width: 840px;
+	display: flex;
+	align-items: flex-end;
+	padding-bottom: 40px;
+	position: relative;
+}
+.registr__content{
+	width: 100%;
+	max-width: 560px;
+	padding: 0 40px;
+	margin: 0 auto;
+}
+.registr__img{
+	flex-grow: 1;
+	img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}

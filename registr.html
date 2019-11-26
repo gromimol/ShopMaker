@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Shopmaker Registr</title>
+</head>
+<body>
+	<header class="header registr-header flex flex--center flex--between">
+		<a href="#" class="logo">
+			<img src="img/logo2.svg" alt="">
+		</a>
+		<div class="registr-header__btns log-btn flex flex--center">
+			<a href="index-v3_2.html" class="back-home">
+				Back to home
+			</a>
+			<a href="#" class="log js-popup" data-id="login"><span>login</span></a>
+		</div>
+	</header>
+	<main class="main">
+		<div class="registr-page flex">
+			<div class="registr__form">
+				<div class="registr__content">
+
+					<div class="popup__top flex flex--center">
+						<span class="popup__logo">
+							<img src="img/logo_lt.svg" alt="">
+						</span>
+						<span class="popup__title">
+							<span class="popup__caption">Create Your <b>Free</b> Account</span>
+							<span class="popup__subtitle">It only takes a few seconds. <b>No credit card required.</b></span>
+						</span>
+					</div>
+
+					<form action="#">
+						<span class="input input--nariko error">
+							<input class="input__field input__field--nariko" id="input-21" type="text" placeholder="">
+							<label class="input__label input__label--nariko" for="input-21">
+								<span class="input__label-content input__label-content--nariko">Username</span>
+							</label>
+						</span>
+						<span class="input input--nariko">
+							<input class="input__field input__field--nariko " id="input-22" type="email" placeholder="">
+							<label class="input__label input__label--nariko" for="input-22">
+								<span class="input__label-content input__label-content--nariko">Email</span>
+							</label>
+						</span>
+						<span class="input input--nariko">
+							<input class="input__field input__field--nariko " id="input-23" type="password" placeholder="">
+							<label class="input__label input__label--nariko" for="input-23">
+								<span class="input__label-content input__label-content--nariko">Password</span>
+							</label>
+						</span>
+						<span class="input input--nariko">
+							<input class="input__field input__field--nariko" id="input-24" type="text" placeholder="">
+							<label class="input__label input__label--nariko" for="input-24">
+								<span class="input__label-content input__label-content--nariko">Your site name</span>
+							</label>
+						</span>
+
+						<div class="agree">
+							<input type="checkbox" id="ag1" checked>
+							<label for="ag1">
+								I am 18 years of age or older
+							</label>
+						</div>
+
+						<button type="submit" class="btn btn--center">
+							<span>join free</span>
+						</button>
+
+						<div class="form__notice">
+							Already a member? <a href="#">Login now</a>
+						</div>
+					</form>
+					<div class="popup__notice">By clicking Join Free, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></div>
+				</div>
+				<!-- /.registr__content-->
+			</div>
+			<!-- /.registr__form -->
+			<div class="registr__img">
+				<img src="img/bg/registr-photo.jpg" alt="">
+			</div>
+		</div>
+		<!-- /.registr-page -->
+	</main>
+
+<div id="overlay"></div>
+
+<div class="popup" id="join">
+
+	<a href="#" class="close js-close"></a>
+
+	<div class="popup__top flex flex--center">
+		<span class="popup__logo">
+			<img src="img/logo_lt.svg" alt="">
+		</span>
+		<span class="popup__title">
+			<span class="popup__caption">Create Your <b>Free</b> Account</span>
+			<span class="popup__subtitle">It only takes a few seconds. <b>No credit card required.</b></span>
+		</span>
+	</div>
+
+	<form action="#">
+		<span class="input input--nariko error">
+			<input class="input__field input__field--nariko" id="input-21" type="text" placeholder="">
+			<label class="input__label input__label--nariko" for="input-21">
+				<span class="input__label-content input__label-content--nariko">Username</span>
+			</label>
+		</span>
+		<span class="input input--nariko">
+			<input class="input__field input__field--nariko " id="input-22" type="email" placeholder="">
+			<label class="input__label input__label--nariko" for="input-22">
+				<span class="input__label-content input__label-content--nariko">Email</span>
+			</label>
+		</span>
+		<span class="input input--nariko">
+			<input class="input__field input__field--nariko " id="input-23" type="password" placeholder="">
+			<label class="input__label input__label--nariko" for="input-23">
+				<span class="input__label-content input__label-content--nariko">Password</span>
+			</label>
+		</span>
+		<span class="input input--nariko">
+			<input class="input__field input__field--nariko" id="input-24" type="text" placeholder="">
+			<label class="input__label input__label--nariko" for="input-24">
+				<span class="input__label-content input__label-content--nariko">Your site name</span>
+			</label>
+		</span>
+
+		<div class="agree">
+			<input type="checkbox" id="ag1" checked>
+			<label for="ag1">
+				I am 18 years of age or older
+			</label>
+		</div>
+
+		<button type="submit" class="btn btn--center">
+			<span>join free</span>
+		</button>
+
+		<div class="form__notice">
+			Already a member? <a href="#">Login now</a>
+		</div>
+	</form>
+	<div class="popup__notice">By clicking Join Free, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></div>
+</div>
+<!-- /.popup join-->
+
+<div class="popup" id="login">
+
+	<a href="#" class="close js-close"></a>
+
+	<div class="popup__top flex flex--center">
+		<span class="popup__logo">
+			<img src="img/logo_lt.svg" alt="">
+		</span>
+		<span class="popup__title">
+			<span class="popup__caption">Log In</span>
+		</span>
+	</div>
+	
+	<div class="popup__content">
+		<div class="popup__form">
+			<ul class="socio flex flex--center">
+				<li>
+					<a href="#">
+						<img src="img/socio/facebook.svg" alt="">						
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/socio/twitter.svg" alt="">
+					</a>
+				</li>
+			</ul>
+
+			<form action="#">
+				<span class="input input--nariko">
+					<input class="input__field input__field--nariko" id="input-25" type="text" placeholder="">
+					<label class="input__label input__label--nariko" for="input-25">
+						<span class="input__label-content input__label-content--nariko">Username or Email</span>
+					</label>
+				</span>
+				<span class="input input--nariko">
+					<input class="input__field input__field--nariko" id="input-26" type="password" placeholder="">
+					<label class="input__label input__label--nariko" for="input-26">
+						<span class="input__label-content input__label-content--nariko">Password</span>
+					</label>
+				</span>
+			</form>
+			<a href="#" class="forgot-pass js-popup" data-id="password">
+				Forgot your password?
+			</a>
+
+			<div class="popup__bottom flex flex--right">
+				<button type="submit" class="btn btn--lt">
+					<span>Login</span>
+				</button>
+			</div>
+		</div>
+		<!-- /.popup__form -->
+		<div class="popup__success">
+			<img src="img/ico/check_blue.svg" alt="" class="success-img">
+			<div class="success__title">
+				Success!
+			</div>
+			<div class="success__user">
+				Welcomeb <b>Razersection</b>!
+			</div>
+
+			<div class="success__notice">
+				Lorem ipsum dolor sit amet.
+			</div>
+		</div>
+	</div>
+	<!-- /.popup__content -->
+</div>
+<!-- /.popup login-->
+
+<div class="popup" id="password">
+
+	<a href="#" class="close js-close"></a>
+
+	<div class="popup__top flex flex--center">
+		<span class="popup__logo">
+			<img src="img/logo_lt.svg" alt="">
+		</span>
+		<span class="popup__title">
+			<span class="popup__caption">Forgot Password?</span>
+		</span>
+	</div>
+	
+	<div class="popup__content">
+		<div class="popup__form">
+		
+			<form action="#">
+				<span class="input input--nariko">
+					<input class="input__field input__field--nariko" id="input-28" type="text" placeholder="">
+					<label class="input__label input__label--nariko" for="input-28">
+						<span class="input__label-content input__label-content--nariko">Your Email address</span>
+					</label>
+				</span>
+			</form>
+			<div class="popup__bottom flex flex--between flex--center">
+				<div class="popup__bottom__notice">
+					We'll email you a link to reset it.
+				</div>
+				<button type="submit" class="btn btn--lt">
+					<span>Send mail</span>
+				</button>
+			</div>
+		</div>
+		<!-- /.popup__form -->
+		<div class="popup__success">
+			<img src="img/ico/check_blue.svg" alt="" class="success-img">
+			<div class="success__title">
+				Success!
+			</div>
+			<div class="success__user">
+				The Recovery link was successfully sent to <b>yourmail@gmail.com</b>
+			</div>
+		</div>
+	</div>
+	<!-- /.popup__content -->
+</div>
+<!-- /.popup login-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/headroom.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

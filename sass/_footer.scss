@@ -1,0 +1,48 @@
+.footer{
+	background-color: #0a0f12;
+	padding: 100px 0;
+	text-align: center;
+	.container.flex{
+		flex-direction: column;
+		justify-content: center;
+	}
+	.menu{
+		justify-content: center;
+		margin-bottom: 50px;
+	}
+	.logo{
+		margin-bottom: 50px;
+	}
+	.log-btn{
+		margin-bottom: 50px;
+		justify-content: center;
+	}
+}
+.copyright{
+	font-size: .75rem;
+	color: #717171;
+	margin-bottom: 50px;
+	a{
+		color: #717171;
+		&:hover{
+			color: $blue;
+		}
+	}
+}
+.socio.flex{
+	justify-content: center;
+	li{
+		margin: 0 5px;
+		a{
+			display: block;
+			width: 35px;
+			height: 35px;
+			img{
+				width: 100%;
+			}
+			&:hover{
+				opacity: .7;
+			}
+		}
+	}
+}
