@@ -1,6 +1,21 @@
 new WOW().init();	
 $(document).ready(function () {
 
+$('.mob-btn').on('click',function () {
+	$('body').addClass('menu-open');
+});
+$('.menu-overlay').on('click',function () {
+	$('body').removeClass('menu-open');
+});
+
+$(window).scroll(function () {
+	if ($(this).scrollTop() > 500) {
+		$('.header').addClass('header--invisible');
+	} else {
+		$('.header').removeClass('header--invisible');
+	}
+});
+
 // only for showing thanks block after send form.
 $('#login .btn, #password .btn').on('click',function (e) {
 	e.preventDefault();

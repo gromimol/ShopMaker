@@ -13,6 +13,11 @@
 		
 		<div class="header flex flex--between">
 			<div class="header__left flex flex--center">
+				<div class="mob-btn">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
 				<a href="#" class="logo">
 					<img src="img/sm-logo-svg.svg" alt="">
 				</a>
@@ -23,6 +28,26 @@
 					<li><a href="#">Pricing</a></li>
 					<li><a href="#">FAQ</a></li>
 					<li><a href="#">Contact Us</a></li>
+					<li class="mobile">
+						<a href="#" class="btn btn--lt btn--border">
+							<span>logout</span>
+						</a>
+					</li>
+					<li class="mobile">
+						<a href="#" class="btn btn--lt btn--blue">
+							<span>Edit your site</span>
+						</a>
+					</li>
+					<li class="mobile">
+						<div class="select">
+							<span class="placeholder"><img src="img/ico/flag-usa.png" alt=""></span>
+							<ul class="select__list">
+								<li data-value="flag1"><img src="img/ico/flag-usa.png" alt=""></li>
+								<li data-value="flag2"><img src="img/ico/flag-usa.png" alt=""></li>
+							</ul>
+							<input type="hidden" name="changeme" value="flag2">
+						</div>
+					</li>
 				</ul>
 			</div>
 			<!-- /.header__left -->
@@ -48,6 +73,9 @@
 				</div>
 			</div>
 			<!-- /.header__right -->
+	
+			<!-- for-mobile -->
+			<div class="menu-overlay"></div>
 		</div>
 		<!-- /.header -->
 
