@@ -44,13 +44,7 @@ $('.btn-container .btn').on('click',function (e) {
 	}, 3000)
 })
 
-// Sticky header
-// получить элемент
-var myElement = document.querySelector("header");
-// создать новый экземпляр Headroom
-var headroom  = new Headroom(myElement);
-// инициализация
-headroom.init();
+
 	
 // input
 $('.input__field').change(function() {
@@ -78,6 +72,46 @@ $('.input__field').change(function() {
 	maxHeightFunc($('.find-block__subtitle'));
 
 	// slider
+
+	$('.main-screen-slider').slick({
+		dots: true,
+		nextArrow: '<span class="next-slide"><svg width="18" height="12" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 18 12"><defs></defs><desc>Generated with Avocode.</desc><g><g><title>Rectangle 5 copy</title><path d="M11.21912,1.21251l1.2155,-1.22355l5.57592,5.60911l-0.39959,0.4019l0.39959,0.40181l-5.57592,5.60882l-1.2155,-1.2234l3.89925,-3.92244h-15.11832v-1.72951l15.1183,0z" fill="currentColor" fill-opacity="1"></path></g></g></svg></span>',
+		prevArrow: '<span class="prev-slide"></span>'
+	});
+
+	 // Счетчик слайдов
+	 (function () {
+
+	 	var $slider = $('.main-screen-slider');
+
+	 	if ($slider.length) {
+	 		var currentSlide;
+	 		var slidesCount;
+	 		var sliderCounter = $('.slider__number');
+
+	 		var updateSliderCounter = function(slick, currentIndex) {
+	 			currentSlide = slick.slickCurrentSlide() + 1;
+	 			sliderCounter.text(currentSlide);
+
+  	};
+
+  	$slider.on('init', function(event, slick) {
+  		// $slider.append(sliderCounter);
+  		updateSliderCounter(slick);
+  	});
+
+  	$slider.on('beforeChange', function(event) {
+  		$(sliderCounter).addClass('opacity');
+  	});
+  	$slider.on('afterChange', function(event, slick, currentSlide) {
+  		$(sliderCounter).removeClass('opacity');
+  		updateSliderCounter(slick, currentSlide);
+  	});
+
+  }
+})();
+
+
 	$('.themes-slider').slick({
 		prevArrow: '<span class="main-slider__arrow main-slider__prev"></span>',
 		nextArrow: '<span class="main-slider__arrow main-slider__next"></span>',
@@ -159,5 +193,20 @@ $('.input__field').change(function() {
 	$('.all-features').on('click',function(e) {
 		e.preventDefault();
 		$(this).hide().next('.features__block').show();
-	})
+	});
+
+	// select
+	$('.select').on('click','.placeholder',function(){
+		var parent = $(this).closest('.select');
+		if ( ! parent.hasClass('is-open')){
+			parent.addClass('is-open');
+			$('.select.is-open').not(parent).removeClass('is-open');
+		}else{
+			parent.removeClass('is-open');
+		}
+	}).on('click','.select__list > li',function(){
+		var parent = $(this).closest('.select');
+		parent.removeClass('is-open').find('.placeholder').html( $(this).html() );
+		parent.find('input[type=hidden]').attr('value', $(this).attr('data-value') );
+	});
 })
