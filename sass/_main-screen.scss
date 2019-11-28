@@ -213,7 +213,10 @@
 		background-size: contain;
 	}
 }
-.slider-macbook{
+.slider__right .slider-macbook-4k{
+	display: none;
+}
+.slider__right .slider-macbook{
 	position: absolute;
 	top: 50%;
 	right: -16em;

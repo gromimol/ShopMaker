@@ -1,3 +1,4 @@
+
 @media(min-width: 1921px){
 	.registr__form{
 		max-width: none;
@@ -24,15 +25,56 @@
 		max-width: 75%;
 	}
 	.slider__left .h1{
-		font-size: 4vw;
+		font-size: 3vw;
 	}
 	.slider__left .h4{
-		font-size: 1.2vw;
+		font-size: 1vw;
 	}
 	.slider__left .notice{
 		font-size: .8vw;
 	}
+	.slider__right .slider-macbook{
+		display: none;
+	}
+	.slider__right .slider-macbook-4k{
+		display: block !important;
+		right: -40%;
+	}
+	.decor-text{
+		right: -25em;
+	}
 }
+@media(max-width: 3200px){
+	.slider__right .slider-macbook-4k{
+		right: -50%;
+	}
+}
+@media(max-width: 3000px){
+	.slider__right .slider-macbook-4k{
+		right: -50%;
+		max-width: 150em
+	}
+}
+
+@media(max-width: 2700px){
+	.slider__right .slider-macbook-4k{
+		right: -40%;
+		max-width: 120em
+	}
+	.decor-text{
+		right: -20em;
+	}
+}
+@media(max-width: 2300px){
+	.slider__right .slider-macbook-4k{
+		right: -50%;
+		max-width: 100em
+	}
+	.decor-text{
+		right: -15em;
+	}
+}
+
 @media (max-width: 1800px){
 	.slide2__img{
 		max-width: 700px;
