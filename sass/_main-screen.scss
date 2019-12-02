@@ -323,7 +323,179 @@
 }
 
 
+.left-aside{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 90px;
+	background-color: #fff;
+	padding-bottom: 30px;
+	transition: all .3s;
+	z-index: 2;
+}
+.aside__nav{
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+	transition: all .3s;
+}
+.aside-menu {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .aside-menu li {
+    font-size: 9px;
+    font-family: "Futura", sans-serif;
+    font-weight: 500;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: #767877;
+    padding: 6px 40px; }
+    .aside-menu li:not(:last-child) {
+      border-right: 1px solid #d9d9d9; }
+    .aside-menu li a {
+      color: #767877;
+      display: block;
+      position: relative;
+      white-space: nowrap; }
+      .aside-menu li a::after {
+        content: '';
+        width: 90%;
+        height: 1px;
+        background-color: #5b5cee;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-52%);
+                transform: translateX(-52%);
+        top: calc(100% + 2px);
+        opacity: 0;
+        -webkit-transition: opacity .3s;
+        transition: opacity .3s; }
+      .aside-menu li a:hover {
+        color: var(--black); }
+        .aside-menu li a:hover::after {
+          opacity: 1; }
 
+.aside__options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.follow {
+  margin-bottom: 43px;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+  .follow a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: var(--blue); }
+    .follow a:hover {
+      color: var(--black); }
+      .follow a:hover span {
+        color: var(--blue); }
+        .follow a:hover span::before {
+          background-color: #297be9; }
+    .follow a span {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font-size: 9px;
+      text-transform: uppercase;
+      color: #8f8f8f;
+      letter-spacing: 0.45px;
+      -webkit-transform: rotate(-90deg) translateX(50%);
+              transform: rotate(-90deg) translateX(50%);
+      -webkit-transform-origin: center;
+              transform-origin: center;
+      white-space: nowrap;
+      -webkit-transition: color .3s;
+      transition: color .3s; }
+      .follow a span::before {
+        content: '';
+        width: 20px;
+        height: 1px;
+        background-color: #d9d9d9;
+        margin: 0 15px;
+        -webkit-transition: all .3s;
+        transition: all .3s; }
+
+.fb-svg {
+  width: 7px;
+  height: 12px; }
+
+.burger {
+  display: block;
+  width: 40px;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  -webkit-transition: all .4s;
+  transition: all .4s; }
+  .burger:hover span {
+    background-color: #5b5cee }
+    .burger:hover span:first-child {
+      width: 100%; }
+    .burger:hover span:nth-child(2) {
+      width: 75%; }
+    .burger:hover span:nth-child(3) {
+      width: 50%; }
+  .burger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    border-radius: 3px;
+    -webkit-transition: all .5s;
+    transition: all .5s; }
+    .burger span:not(:last-child) {
+      margin-bottom: 7px; }
+    .burger span:first-child {
+      width: 50%; }
+    .burger span:last-child {
+      width: 80%; }
+  .burger.active {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    width: 30px; }
+.burger--rotate {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg); }
+  .burger--rotate:hover span:nth-child(2) {
+    -webkit-transition-delay: .2s;
+            transition-delay: .2s; }
+  .burger--rotate:hover span:last-child {
+    -webkit-transition-delay: .4s;
+            transition-delay: .4s; }
+  .burger--rotate.active {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
 
 
 

@@ -175,10 +175,17 @@
 	.slider__counter{
 		right: 540px;
 	}
+	.left-aside{
+		width: 40px;
+	}
+	.aside-menu li{
+		font-size: 7px;
+	}
 }
 // 1600px
 @media(max-width: 1366px){
-	img.heart__group.heart{
+	img.heart__group.heart,
+	.left-aside{
 		display: none;
 	}
 	.slick-active .heart__top{
