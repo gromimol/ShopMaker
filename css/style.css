@@ -5447,7 +5447,7 @@ body {
 
   .select .placeholder img,
   .select__list img {
-    width: 50px; }
+    width: 30px; }
 
   .logo {
     width: 9vw; }
@@ -5481,16 +5481,16 @@ body {
     max-width: 700px; }
 
   .screen-slider-container {
-    max-width: 75%; }
+    max-width: 70%; }
 
   .slider__left .h1 {
-    font-size: 3vw; }
+    font-size: 2.5vw; }
 
   .slider__left .h4 {
-    font-size: 1vw; }
+    font-size: .8vw; }
 
   .slider__left .notice {
-    font-size: .8vw; }
+    font-size: .6vw; }
 
   .slider__right .slider-macbook {
     display: none; }
