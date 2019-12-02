@@ -5441,12 +5441,6 @@ body {
         height: 200%; }
 
 @media (min-width: 2500px) {
-  .menu li a {
-    font-size: 28px; }
-
-  .header .btn {
-    font-size: 24px; }
-
   .select .placeholder {
     background-size: 17px;
     padding-right: 24px; }
@@ -5456,10 +5450,16 @@ body {
     width: 50px; }
 
   .logo {
-    width: 450px; }
+    width: 9vw; }
     .logo img {
       width: 100%; } }
 @media (min-width: 1921px) {
+  .menu li a {
+    font-size: .6vw; }
+
+  .header .btn {
+    font-size: .7vw; }
+
   .registr__form {
     max-width: none;
     -webkit-box-align: center;
@@ -5497,7 +5497,8 @@ body {
 
   .slider__right .slider-macbook-4k {
     display: block !important;
-    right: -40%; }
+    right: -40%;
+    max-height: 90vh; }
 
   .decor-text {
     right: -25em; } }
