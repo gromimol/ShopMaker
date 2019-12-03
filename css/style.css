@@ -5263,7 +5263,7 @@ b {
   opacity: 0;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  font-size: 10px;
+  font-size: 9px;
   text-transform: uppercase;
   color: #8f8f8f;
   font-family: 'Futura', sans-serif;
