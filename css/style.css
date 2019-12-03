@@ -4850,7 +4850,7 @@ b {
                 transform: scale(1); }
       .main-screen .slick-dots li button {
         width: 100%;
-        background-color: #483b6b;
+        background-color: #3f4167;
         height: 3px;
         border-radius: 0;
         display: block;
@@ -5063,7 +5063,7 @@ b {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #fff;
-  color: #493473;
+  color: #3f4167;
   position: absolute;
   right: 16.25em;
   bottom: 3.8em;
@@ -5075,7 +5075,7 @@ b {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: 1px solid #493473;
+    border: 1px solid #3f4167;
     position: absolute;
     top: 50%;
     left: 50%;
