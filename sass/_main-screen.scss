@@ -414,6 +414,11 @@
 		&:not(:last-child){
 			margin-bottom: 20px;
 		}
+		&:hover{
+			& ~ .follow__text{
+				opacity: 1;
+			}
+		}
 		&--fb{
 			&:hover{
 				color: #5b5cee;
@@ -435,6 +440,7 @@
 	display: inline-flex;
 	align-items: center;
 	order: -1;
+	opacity: 0;
 	white-space: nowrap;
 	transform: rotate(-90deg) translateX(50%);
 	font-size: 10px;
@@ -443,7 +449,6 @@
 	font-family: 'Futura', sans-serif;
 	letter-spacing: 1px;
 	font-weight: 500;
-	zoom: .8;
 	transition: all .3s;
 	&::before{
 		content: '';

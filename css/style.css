@@ -5236,6 +5236,8 @@ b {
     color: #8f8f8f; }
     .follow .ico:not(:last-child) {
       margin-bottom: 20px; }
+    .follow .ico:hover ~ .follow__text {
+      opacity: 1; }
     .follow .ico--fb:hover {
       color: #5b5cee; }
     .follow .ico--inst:hover {
@@ -5253,6 +5255,7 @@ b {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
+  opacity: 0;
   white-space: nowrap;
   -webkit-transform: rotate(-90deg) translateX(50%);
           transform: rotate(-90deg) translateX(50%);
@@ -5262,7 +5265,6 @@ b {
   font-family: 'Futura', sans-serif;
   letter-spacing: 1px;
   font-weight: 500;
-  zoom: .8;
   -webkit-transition: all .3s;
   transition: all .3s; }
   .follow__text::before {
