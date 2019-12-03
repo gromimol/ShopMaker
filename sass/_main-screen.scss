@@ -414,34 +414,19 @@
 		&:not(:last-child){
 			margin-bottom: 20px;
 		}
-		&:hover{
-			& ~ .follow__text{
-				opacity: 1;
-				color: currentColor;
-			}
-		}
 		&--fb{
 			&:hover{
 				color: #5b5cee;
-				& ~ .follow__text{
-					color: #5b5cee;
-				}
 			}
 		}
 		&--inst{
 			&:hover{
 				color: #ee1bdd;
-				& ~ .follow__text{
-					color: #ee1bdd;
-				}
 			}
 		}
 		&--tw{
 			&:hover{
 				color: #1e7bff;
-				& ~ .follow__text{
-					color: #1e7bff;
-				}
 			}
 		}
 	}
@@ -452,13 +437,13 @@
 	order: -1;
 	white-space: nowrap;
 	transform: rotate(-90deg) translateX(50%);
-	font-size: 9px;
+	font-size: 10px;
 	text-transform: uppercase;
 	color: #8f8f8f;
 	font-family: 'Futura', sans-serif;
 	letter-spacing: 1px;
 	font-weight: 500;
-	opacity: 0;
+	zoom: .8;
 	transition: all .3s;
 	&::before{
 		content: '';
