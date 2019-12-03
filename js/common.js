@@ -16,6 +16,8 @@ $(window).scroll(function () {
 	}
 });
 
+
+
 // only for showing thanks block after send form.
 $('#login .btn, #password .btn').on('click',function (e) {
 	e.preventDefault();
