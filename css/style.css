@@ -386,7 +386,8 @@ END RESETT CSS
     background: transparent url("../img/ico/select-arrow.svg") 100% center no-repeat;
     cursor: pointer; }
     .select .placeholder img {
-      width: 100%; }
+      width: 24px;
+      height: 16px; }
   .select.is-open .select__list {
     display: block; }
   .select.is-open .placeholder {
@@ -419,6 +420,9 @@ END RESETT CSS
       .select .select__list li:hover {
         background: #0096ff;
         color: #fff; }
+      .select .select__list li img {
+        width: 24px;
+        height: 16px; }
 
                  /*!
 Animate.css - http://daneden.me/animate
@@ -4952,15 +4956,16 @@ b {
     -webkit-transition: all .3s;
     transition: all .3s; }
   .btn-decor:hover::before {
-    background-color: #42b1fb; }
+    -webkit-box-shadow: 0 40px 30px -30px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 40px 30px -30px rgba(0, 0, 0, 0.5); }
   .btn-decor:hover .decor-line--blue {
-    top: 0;
-    left: 0;
-    background-color: #17122d; }
+    top: 10px;
+    left: 5px;
+    background-color: #322e45; }
   .btn-decor:hover .decor-line--dark-blue {
-    top: 0;
-    right: 0;
-    background-color: #17122d; }
+    top: -10px;
+    right: 5px;
+    background-color: #557aff; }
   .btn-decor .text {
     position: relative;
     z-index: 2; }
@@ -5233,6 +5238,7 @@ b {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: #5b5cee;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -5256,6 +5262,9 @@ b {
   margin: 0 15px;
   -webkit-transition: all .3s;
   transition: all .3s; }
+
+.follow:hover .svg-fb {
+  fill: #297be9; }
 
 .fb-svg {
   width: 7px;

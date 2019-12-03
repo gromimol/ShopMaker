@@ -11,8 +11,10 @@
   background:transparent url('../img/ico/select-arrow.svg') 100% center no-repeat;
   cursor: pointer;
   img{
-    width: 100%;
+    width: 24px;
+    height: 16px;
   }
+
 }
 
   &.is-open{
@@ -53,6 +55,10 @@
       &:hover{
         background: $blue;
         color: #fff;
+      }
+      img{
+        width: 24px;
+        height: 16px;
       }
     }
   }
