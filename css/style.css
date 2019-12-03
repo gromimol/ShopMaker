@@ -5259,7 +5259,8 @@ b {
   white-space: nowrap;
   -webkit-transform: rotate(-90deg) translateX(50%);
           transform: rotate(-90deg) translateX(50%);
-  font-size: 9px;
+  zoom: .8;
+  font-size: 10px;
   text-transform: uppercase;
   color: #8f8f8f;
   font-family: 'Futura', sans-serif;
