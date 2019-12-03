@@ -403,6 +403,7 @@
   flex-direction: column;
   align-items: center;
   -webkit-transition: all .3s;
+  position: relative;
   transition: all .3s;
 	.ico{
 		width: 30px;
@@ -416,8 +417,7 @@
 		}
 		&:hover{
 			& ~ .follow__text{
-				transform: rotate(-90deg) translateX(50%);
-				opacity: 1;
+				color:  #8f8f8f;
 			}
 		}
 		&--fb{
@@ -442,12 +442,10 @@
 	align-items: center;
 	order: -1;
 	white-space: nowrap;
-	transform: rotate(-91deg) translateX(50%);
-	opacity: 0;
-	backface-visibility: hidden;
+	transform: rotate(-90deg) translateX(50%);
 	font-size: 9px;
 	text-transform: uppercase;
-	color: #8f8f8f;
+	color:transparent;
 	font-family: 'Futura', sans-serif;
 	letter-spacing: 1px;
 	font-weight: 500;
@@ -456,8 +454,12 @@
 		content: '';
 		width: 30px;
 		height: 1px;
-		background-color: #8f8f8f;
+		background-color: currentColor;
 		margin-right: 15px;
+	}
+	span{
+		opacity: 0;
+		transition: all .3s;
 	}
 }
 

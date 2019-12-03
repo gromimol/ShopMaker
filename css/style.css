@@ -5220,6 +5220,7 @@ b {
       -ms-flex-align: center;
           align-items: center;
   -webkit-transition: all .3s;
+  position: relative;
   transition: all .3s; }
   .follow .ico {
     width: 30px;
@@ -5237,9 +5238,7 @@ b {
     .follow .ico:not(:last-child) {
       margin-bottom: 20px; }
     .follow .ico:hover ~ .follow__text {
-      -webkit-transform: rotate(-90deg) translateX(50%);
-              transform: rotate(-90deg) translateX(50%);
-      opacity: 1; }
+      color: #8f8f8f; }
     .follow .ico--fb:hover {
       color: #5b5cee; }
     .follow .ico--inst:hover {
@@ -5258,14 +5257,11 @@ b {
       -ms-flex-order: -1;
           order: -1;
   white-space: nowrap;
-  -webkit-transform: rotate(-91deg) translateX(50%);
-          transform: rotate(-91deg) translateX(50%);
-  opacity: 0;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  -webkit-transform: rotate(-90deg) translateX(50%);
+          transform: rotate(-90deg) translateX(50%);
   font-size: 9px;
   text-transform: uppercase;
-  color: #8f8f8f;
+  color: transparent;
   font-family: 'Futura', sans-serif;
   letter-spacing: 1px;
   font-weight: 500;
@@ -5275,8 +5271,12 @@ b {
     content: '';
     width: 30px;
     height: 1px;
-    background-color: #8f8f8f;
+    background-color: currentColor;
     margin-right: 15px; }
+  .follow__text span {
+    opacity: 0;
+    -webkit-transition: all .3s;
+    transition: all .3s; }
 
 .burger {
   display: block;
