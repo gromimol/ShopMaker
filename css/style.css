@@ -418,7 +418,7 @@ END RESETT CSS
       font-size: 1rem;
       cursor: pointer; }
       .select .select__list li:hover {
-        background: #0096ff;
+        background: var(--blue);
         color: #fff; }
       .select .select__list li img {
         width: 24px;
@@ -2801,7 +2801,7 @@ textarea.input__field.input--filled + .input__label .input__label-content {
       font-size: .875rem;
       letter-spacing: 1.4px; }
       .menu li a:hover, .menu li a.active {
-        color: #1567db; }
+        color: var(--blue); }
 
 .mobile {
   display: none; }
@@ -4862,7 +4862,7 @@ b {
           height: 100%;
           -webkit-transform: scale(0);
                   transform: scale(0);
-          background-color: #5e9fec;
+          background-color: #0096ff;
           position: absolute;
           top: 0;
           left: 0;
@@ -4929,7 +4929,7 @@ b {
       text-decoration: underline; }
 
 .blue {
-  color: #5287ff; }
+  color: #0096ff; }
 
 .btn-decor {
   font-family: "Futura",sans-serif;
@@ -5033,7 +5033,7 @@ b {
     content: '';
     width: 35%;
     height: 2px;
-    background-color: #557aff;
+    background-color: #0096ff;
     position: absolute;
     right: 0;
     top: -6px; }
@@ -5063,7 +5063,7 @@ b {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #fff;
-  color: #1f1634;
+  color: #493473;
   position: absolute;
   right: 16.25em;
   bottom: 3.8em;
@@ -5087,10 +5087,10 @@ b {
     width: 18px;
     height: 12px; }
   .next-slide:hover {
-    background-color: #557aff;
+    background-color: #0096ff;
     color: #fff; }
     .next-slide:hover::before {
-      border-color: #557aff; }
+      border-color: #0096ff; }
 
 .slider__counter {
   position: absolute;
@@ -5208,64 +5208,78 @@ b {
   align-items: center; }
 
 .follow {
-  margin-bottom: 43px;
-  -webkit-transition: all .3s;
-  transition: all .3s; }
-
-.follow a {
+  margin-bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-family: 'Futura', sans-serif;
-  color: #8f8f8f; }
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+  .follow .ico {
+    width: 30px;
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #8f8f8f; }
+    .follow .ico:not(:last-child) {
+      margin-bottom: 20px; }
+    .follow .ico:hover ~ .follow__text {
+      opacity: 1;
+      color: currentColor; }
+    .follow .ico--fb:hover {
+      color: #5b5cee; }
+      .follow .ico--fb:hover ~ .follow__text {
+        color: #5b5cee; }
+    .follow .ico--inst:hover {
+      color: #ee1bdd; }
+      .follow .ico--inst:hover ~ .follow__text {
+        color: #ee1bdd; }
+    .follow .ico--tw:hover {
+      color: #1e7bff; }
+      .follow .ico--tw:hover ~ .follow__text {
+        color: #1e7bff; }
 
-.follow a:hover {
-  color: #297be9; }
-  .follow a:hover span {
-    color: #297be9; }
-  .follow a:hover .svg-fb {
-    fill: #297be9; }
-
-.follow a span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #5b5cee;
+.follow__text {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  white-space: nowrap;
+  -webkit-transform: rotate(-90deg) translateX(50%);
+          transform: rotate(-90deg) translateX(50%);
   font-size: 9px;
   text-transform: uppercase;
   color: #8f8f8f;
+  font-family: 'Futura', sans-serif;
+  letter-spacing: 1px;
   font-weight: 500;
-  letter-spacing: 0.45px;
-  -webkit-transform: rotate(-90deg) translateX(50%);
-  transform: rotate(-90deg) translateX(50%);
-  -webkit-transform-origin: center;
-  transform-origin: center;
-  white-space: nowrap;
-  -webkit-transition: color .3s;
-  transition: color .3s; }
-
-.follow a span::before {
-  content: '';
-  width: 20px;
-  height: 1px;
-  background-color: #d9d9d9;
-  margin: 0 15px;
+  opacity: 0;
   -webkit-transition: all .3s;
   transition: all .3s; }
-
-.fb-svg {
-  width: 7px;
-  height: 12px; }
+  .follow__text::before {
+    content: '';
+    width: 30px;
+    height: 1px;
+    background-color: #8f8f8f;
+    margin-right: 15px; }
 
 .burger {
   display: block;
@@ -5328,7 +5342,9 @@ b {
   transform: rotate(0deg); }
 
 :root {
-  --blue: #0096ff; }
+  --blue: #0096ff;
+  --dark-blue: #1e7bff;
+  --pink: #ee1bdd; }
 
 html {
   font-size: 16px; }

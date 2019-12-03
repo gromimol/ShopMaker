@@ -53,7 +53,7 @@
       cursor: pointer;
 
       &:hover{
-        background: $blue;
+        background: var(--blue);
         color: #fff;
       }
       img{

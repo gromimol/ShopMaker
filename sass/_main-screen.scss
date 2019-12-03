@@ -63,7 +63,7 @@
 					width: 100%;
 					height: 100%;
 					transform: scale(0);
-					background-color: #5e9fec;
+					background-color: #0096ff;
 					position: absolute;
 					top: 0;
 					left: 0;
@@ -135,7 +135,7 @@
 	}
 }
 .blue{
-	color: #5287ff;
+	color: #0096ff;
 }
 .btn-decor{
 	font-family: "Futura",sans-serif;
@@ -245,7 +245,7 @@
 		content: '';
 		width: 35%;
 		height: 2px;
-		background-color: #557aff;
+		background-color: #0096ff;
 		position: absolute;
 		right: 0;
 		top: -6px;
@@ -272,7 +272,7 @@
 	align-items: center;
 	justify-content: center;
 	background-color: #fff;
-	color: #1f1634;
+	color: #493473;
 	position: absolute;
 	right: 16.25em;
 	bottom: 3.8em;
@@ -295,10 +295,10 @@
 		height: 12px;
 	}
 	&:hover{
-		background-color: #557aff;
+		background-color: #0096ff;
 			color: #fff;
 		&::before{
-			border-color: #557aff;
+			border-color: #0096ff;
 		}
 	}
 }
@@ -398,65 +398,78 @@
           align-items: center; }
 
 .follow {
-  margin-bottom: 43px;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   -webkit-transition: all .3s;
-  transition: all .3s; }
-  .follow a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-family: 'Futura', sans-serif;
-    color: #8f8f8f; }
-    .follow a:hover {
-    	color:  #297be9;
-    	span{
-    		color:  #297be9;
-    	}
-    	.svg-fb{
-    		fill: #297be9;
-    	}
-    }
+  transition: all .3s;
+	.ico{
+		width: 30px;
+		height: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #8f8f8f;
+		&:not(:last-child){
+			margin-bottom: 20px;
+		}
+		&:hover{
+			& ~ .follow__text{
+				opacity: 1;
+				color: currentColor;
+			}
+		}
+		&--fb{
+			&:hover{
+				color: #5b5cee;
+				& ~ .follow__text{
+					color: #5b5cee;
+				}
+			}
+		}
+		&--inst{
+			&:hover{
+				color: #ee1bdd;
+				& ~ .follow__text{
+					color: #ee1bdd;
+				}
+			}
+		}
+		&--tw{
+			&:hover{
+				color: #1e7bff;
+				& ~ .follow__text{
+					color: #1e7bff;
+				}
+			}
+		}
+	}
+}
+.follow__text{
+	display: inline-flex;
+	align-items: center;
+	order: -1;
+	white-space: nowrap;
+	transform: rotate(-90deg) translateX(50%);
+	font-size: 9px;
+	text-transform: uppercase;
+	color: #8f8f8f;
+	font-family: 'Futura', sans-serif;
+	letter-spacing: 1px;
+	font-weight: 500;
+	opacity: 0;
+	transition: all .3s;
+	&::before{
+		content: '';
+		width: 30px;
+		height: 1px;
+		background-color: #8f8f8f;
+		margin-right: 15px;
+	}
+}
 
-    .follow a span {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      color: #5b5cee;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      font-size: 9px;
-      text-transform: uppercase;
-      color: #8f8f8f;
-      font-weight: 500;
-      letter-spacing: 0.45px;
-      -webkit-transform: rotate(-90deg) translateX(50%);
-              transform: rotate(-90deg) translateX(50%);
-      -webkit-transform-origin: center;
-              transform-origin: center;
-      white-space: nowrap;
-      -webkit-transition: color .3s;
-      transition: color .3s; }
-      
-      .follow a span::before {
-        content: '';
-        width: 20px;
-        height: 1px;
-        background-color: #d9d9d9;
-        margin: 0 15px;
-        -webkit-transition: all .3s;
-        transition: all .3s; }
-        
-.fb-svg {
-  width: 7px;
-  height: 12px; }
+     
 
 .burger {
   display: block;
