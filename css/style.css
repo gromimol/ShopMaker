@@ -5455,10 +5455,10 @@ body {
       width: 100%; } }
 @media (min-width: 1921px) {
   .menu li a {
-    font-size: .6vw; }
+    font-size: 16px; }
 
   .header .btn {
-    font-size: .5vw; }
+    font-size: 16px; }
 
   .registr__form {
     max-width: none;
