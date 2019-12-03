@@ -5223,16 +5223,14 @@ b {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: var(--blue); }
+  color: #5b5cee; }
 
 .follow a:hover {
-  color: var(--black); }
-
-.follow a:hover span {
-  color: var(--blue); }
-
-.follow a:hover span::before {
-  background-color: #297be9; }
+  color: #297be9; }
+  .follow a:hover span {
+    color: #297be9; }
+  .follow a:hover .svg-fb {
+    fill: #297be9; }
 
 .follow a span {
   display: -webkit-box;
@@ -5262,9 +5260,6 @@ b {
   margin: 0 15px;
   -webkit-transition: all .3s;
   transition: all .3s; }
-
-.follow:hover .svg-fb {
-  fill: #297be9; }
 
 .fb-svg {
   width: 7px;
