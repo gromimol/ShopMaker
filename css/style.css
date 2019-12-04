@@ -3682,7 +3682,8 @@ img.slide2_notebook--mobile {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    margin-left: 0; }
     .footer .menu li {
       margin: 0 30px;
       padding: 0; }
