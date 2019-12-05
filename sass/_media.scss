@@ -63,6 +63,7 @@
 		display: block !important;
 		right: -40%;
 		max-height: 90vh;
+		width: auto;
 	}
 	.decor-text{
 		right: -25em;
@@ -85,17 +86,12 @@
 		right: -40%;
 		max-width: 120em
 	}
-	.decor-text{
-		right: -20em;
-	}
+	
 }
 @media(max-width: 2300px){
 	.slider__right .slider-macbook-4k{
 		right: -50%;
 		max-width: 100em
-	}
-	.decor-text{
-		right: -15em;
 	}
 
 }

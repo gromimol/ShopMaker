@@ -3,7 +3,7 @@
 	height: 100vh;
 	width: 100%;
 	background:#fff url('../img/bg/main-screen_bg.png') 100% 100% no-repeat;
-	background-size: 90%;
+	background-size: 75%;
 	position: relative;
 	.slick-slider .slick-track, .slick-slider .slick-list{
 		height: 100%;
@@ -12,8 +12,8 @@
 		margin-bottom: 0;
 	}
 	.slick-dots{
-		bottom: 5em;
-		right: 0;
+		bottom: 6.3em;
+		right: -.2em;
 		max-width: 40.625em;
 		margin-right: 21.25em;
 		display: flex;
@@ -76,23 +76,12 @@
 .bg-text{
 	font-family: "Gotham", sans-serif;
 	font-weight: 900;
-	font-size: 13vw;
+	font-size: 14vw;
 	text-transform: uppercase;
-	color: rgba(#000, .03);
+	color: rgba(#000, .02);
 	position: absolute;
-	right: 0;
-	top: .2em;
-	&::before{
-		content: '';
-		width: 1em;
-		height: 1em;
-		background:transparent url('../img/bg/dots-group.png') left top no-repeat;
-		background-size: contain;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
+	right: -.25em;
+	top: 6rem;
 }
 .main-screen-slider,
 .main-screen-slider__item{
@@ -114,6 +103,7 @@
 		font-weight: 700;
 		line-height: 1.21;
 		margin-bottom: .3em;
+		transform: translate(-1rem, 2rem);
 	}
 	.h4{
 		font-size: 1.4375em;
@@ -121,12 +111,14 @@
 		margin-bottom: 1.5em;
 		font-family: "Aspira", sans-serif;
 		font-weight: 400;
+		transform: translate(-1rem, 2.3rem);
 	}
 	.notice{
 		font-family: "Futura",sans-serif;
 		font-weight: 300;
 		font-size: .875rem;
 		margin-top: 2em;
+		transform: translate(-1rem, 2.5rem);
 		a{
 			&:hover{
 				text-decoration: underline;
@@ -147,7 +139,7 @@
 	padding: 1.2em 4.1428em;
 	display: inline-block;
 	position: relative;
-	transform: translateX(.8em);
+	transform: translate(.4em, 2.5rem);
 	&::before{
 		content: '';
 		width: 100%;
@@ -210,10 +202,19 @@
 		width: 11.375em;
 		height: 11.375em;
 		position: absolute;
-		right: -8em;
-		bottom: 8em;
+		right: -10em;
+		bottom: 16em;
 		background:transparent url('../img/bg/dots_violet.png') 0 0 no-repeat;
 		background-size: contain;
+	}
+	&::after{
+		content: '';
+		width: 18.75em;
+		height: 18.75em;
+		background:transparent url('../img/bg/dots-group.png') left top ;
+		position: absolute;
+		top: 15%;
+		left: -7em;
 	}
 }
 .slider__right .slider-macbook-4k{
@@ -223,17 +224,19 @@
 	position: absolute;
 	top: 50%;
 	right: -16em;
-	transform: translateY(-35%);
+	transform: translate(2rem, -32%);
+	width: 84em;
+	z-index: 1;
 }
 .decor-text{
 	position: absolute;
 	top: 50%;
-	right: -12em;
+	right: -17.6em;
 	font-family: "Aspira", sans-serif;
 	font-weight: 700;
 	color: #fff;
 	text-transform: uppercase;
-	letter-spacing: .15em;
+	letter-spacing: .05em;
 	z-index: 3;
 }
 .decor-text__body{
@@ -274,8 +277,8 @@
 	background-color: #fff;
 	color: #3f4167;
 	position: absolute;
-	right: 16.25em;
-	bottom: 3.8em;
+	right: 16em;
+	bottom: 5em;
 	cursor: pointer;
 	transition: all .3s;
 	&::before{
@@ -306,8 +309,8 @@
 .slider__counter{
 	position: absolute;
 	font-size: 3rem;
-	bottom: .7em;
-	right: 21em;	
+	bottom: 1.2em;
+	right: 20.7em;	
 	color: #fff;
 	font-family: "Futura",sans-serif;
 	font-weight: 300;
