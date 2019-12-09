@@ -41,7 +41,8 @@ $('.js-popup').on('click',function (e) {
 	$('body').addClass('noscroll');
 	$('.popup').removeClass('active');
 	$('#' + dataId).addClass('active');
-})
+
+});
 
 $('.js-close, #overlay').on('click',function (e) {
 	e.preventDefault();
@@ -59,6 +60,28 @@ $('.btn-container .btn').on('click',function (e) {
 	setTimeout(function () {
 		$('.touch-form__thanks').removeClass('active')
 	}, 3000)
+});
+
+// when submit success. Example, without  ajax
+$('.subscribe-popup .btn-decor').on('click',function (e) {
+	e.preventDefault();
+
+	$('.subscribe-popup ').addClass('thanks-visible');
+	setTimeout(function () {
+		$('body').removeClass('noscroll');
+		$('.subscribe-popup').removeClass('active');
+	}, 3000);
+	setTimeout(function () {
+		$('.subscribe-popup').removeClass('thanks-visible');
+	}, 3500)
+});
+
+$('html').on('click',function () {
+	if($('.subscribe-popup').hasClass('active')){
+		$('.main-screen').addClass('hide-bg-text');
+	}else{
+		$('.main-screen').removeClass('hide-bg-text');
+	}
 })
 
 

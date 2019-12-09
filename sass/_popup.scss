@@ -1,11 +1,12 @@
 /*popup*/
+
 #overlay{
 	position: fixed;
 	top: 0;
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background-color: rgba(#000, .7);
+	background-color: rgba(#fff, 0);
 	z-index: 100;
 	display: none;
 } 
@@ -267,11 +268,137 @@ b{
 	}
 }
 
+.subscribe-popup{
+	max-width: none;
+	width: 80%;
+	height: 80vh;
+	border: 1px solid #fff;
+	background-color: transparent;
+	padding: 10px;
+	text-align: center;
+	box-shadow: none;
+	overflow: visible;
+	.h2{
+		font-family: "Aspira", sans-serif;
+		font-weight: 700;
+		font-size: 34px;
+		color: #1a202a;
+		line-height: 1.3;
+		margin-bottom: 5px;
+	}
+	.h4{
+		font-family: "Aspira", sans-serif;
+		font-weight: 300;
+		font-size: 20px;
+		color: #1a202a;
+		line-height: 1.3;
+		margin-bottom: 40px;
+	}
+	.input__label-content{
+		text-align: center;
+	}
+	.btn-decor{
+		font-size: 19px;
+		letter-spacing: 1.9px;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		cursor: pointer;
+		outline: none;
+		border: none;
+		&:hover{
+			box-shadow: none;
+			&::before{
+				background-color: #0096ff;
+				box-shadow: 0 25px 20px -10px rgba(#000, .2);
+			}
+		}
+	}
+	.bg-text{
+		font-size: 13.5vw;
+		right: -1em;
+		top: -5px;
+	}
+	.close{
+		z-index: 3;
+	}
+	&.thanks-visible{
+		form{
+			display: none;
+		}
+		.thanks-block{
+			display: flex;
+		}
+	}
+	&.popup{
+		transform: translate(-50%, -50%) scale(.6);
+		&.active{
+			transform: translate(-50%, -50%) scale(1);
+		}
+	}
+}
+.subscribe-popup__content{
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	perspective: 600px;
+	form{
+		transform: translateY(30px);
+	}
+}
+.thanks-block{
+	text-align: left;
+	display: flex;
+	align-items: center;
+	animation: headShake .5s;
+	transition: all .3s;
+	animation-delay: .3s;
+	display: none;
+	.h2{
+		line-height: 1;
+	}
+	.h4{
+		margin-bottom: 0;
+		line-height: 1;
+	}
+}
+.thanks-block__img{
+	margin-right: 14px;
+}
 
+@keyframes headShake {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
 
+  6.5% {
+    -webkit-transform: translateX(-6px) rotateY(-9deg);
+    transform: translateX(-6px) rotateY(-9deg);
+  }
 
+  18.5% {
+    -webkit-transform: translateX(5px) rotateY(7deg);
+    transform: translateX(5px) rotateY(7deg);
+  }
 
+  31.5% {
+    -webkit-transform: translateX(-3px) rotateY(-5deg);
+    transform: translateX(-3px) rotateY(-5deg);
+  }
 
+  43.5% {
+    -webkit-transform: translateX(2px) rotateY(3deg);
+    transform: translateX(2px) rotateY(3deg);
+  }
+
+  50% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
 
 
 

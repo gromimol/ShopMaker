@@ -73,6 +73,11 @@
 		}
 	}
 }
+.hide-bg-text{
+	.bg-text{
+		opacity: 0;
+	}
+}
 .bg-text{
 	font-family: "Gotham", sans-serif;
 	font-weight: 900;
@@ -82,6 +87,7 @@
 	position: absolute;
 	right: -.25em;
 	top: 6rem;
+	transition: all .3s;
 }
 .main-screen-slider,
 .main-screen-slider__item{
@@ -516,4 +522,56 @@
             transform: rotate(0deg); }
 
 
+.subscribe-btn{
+	display: flex;
+	height: 35px;
+	background-color: #17122d;
+	color: #fff;
+	font-family: 'Futura', sans-serif;
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 2.4px;
+	position: fixed;
+	left: 0;
+	top: 50%;
+	transform: rotate(-90deg) translateX(-50%);
+	transform-origin: 0 0;
+	z-index: 10;
+	&::after{
+		content: '';
+		width: 0;
+		height: 100%;
+		background-color: #322e45;
+		position: absolute;
+		left: 0;
+		top: 0;
+		transition: width .3s;
+	}
+	&:hover{
+		box-shadow: 0 15px 25px -10px rgba(#322e45, .4);
+		&::after{
+			width: 100%;
+		}
+	}
+	span{
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		z-index: 1;
+	}
+	.ico{
+		flex: none;
+		width: 40px;
+		background-color: #322e45;
+		img{
+			transform: rotate(90deg);
+		}
+	}
+	.text{
+		padding: 0 25px;
+	}
+}
 
