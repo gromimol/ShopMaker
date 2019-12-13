@@ -272,7 +272,7 @@ b{
 	max-width: none;
 	width: 80%;
 	height: 80vh;
-	border: 1px solid #fff;
+	border: 1px solid #c3c3c3;
 	background-color: transparent;
 	padding: 10px;
 	text-align: center;
@@ -314,9 +314,21 @@ b{
 		}
 	}
 	.bg-text{
-		font-size: 13.5vw;
-		right: -1em;
-		top: -5px;
+		font-size: 9.375em;
+		right: auto;
+		text-align: center;
+		line-height: 1;
+		&::after{
+			content: '';
+			width: .58em;
+			height: .733em;
+			background: url('../img/logo_ico.svg') left top no-repeat;
+			background-size: contain;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
 	}
 	.close{
 		z-index: 3;
