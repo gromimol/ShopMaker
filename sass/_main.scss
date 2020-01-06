@@ -152,8 +152,15 @@ body{
 	}
 	
 }
-
-
+.chat-bubble{
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	z-index: 20;
+}
+button{
+	background-color: transparent;
+}
 
 
 

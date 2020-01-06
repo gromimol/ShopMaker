@@ -58,7 +58,7 @@ $('.btn-container .btn').on('click',function (e) {
 
 	$('.touch-form__thanks').addClass('active');
 	setTimeout(function () {
-		$('.touch-form__thanks').removeClass('active')
+		$('.touch-form__thanks').removeClass('active');
 	}, 3000)
 });
 
@@ -70,6 +70,7 @@ $('.subscribe-popup .btn-decor').on('click',function (e) {
 	setTimeout(function () {
 		$('body').removeClass('noscroll');
 		$('.subscribe-popup').removeClass('active');
+		$('#overlay').hide();
 	}, 3000);
 	setTimeout(function () {
 		$('.subscribe-popup').removeClass('thanks-visible');
