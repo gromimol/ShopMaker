@@ -2,13 +2,14 @@
 	--blue: #0096ff;
 	--dark-blue: #1e7bff;
 	--pink: #ee1bdd;
+	--grey-text: #343434;
 
 }
 html{
 	font-size: 16px;
 }
 body{
-	font-family: "Roboto", sans-serif;
+	font-family: "Aspira",sans-serif;
 	font-weight: 200;
 	line-height: 1.4;
 	color: #000;
@@ -64,16 +65,15 @@ body{
 }
 
 .title{
-	font-size: 4.375rem;
-	font-weight: 200;
-	padding: 2.1428em 0 1.4285em;
+	font-size: 3.125rem;
+	font-weight: 300;
+	padding: 2em 0;
 	text-align: center;
-	text-transform: uppercase;
 	&--white{
 		color: #fff;
 	}
 	span{
-		font-weight: 900;
+		font-weight: 700;
 	}
 }
 

@@ -201,6 +201,27 @@ $('.input__field').change(function() {
 
 	});
 
+	$('.features-slider').slick({
+		rows: 2,
+		slidesPerRow: 3,
+		dots: true,
+		arrows: false,
+		responsive: [
+		{
+			breakpoint: 990,
+			settings: {
+				slidesPerRow: 2
+			}
+		},
+		{
+			breakpoint: 400,
+			settings: {
+				slidesPerRow: 1
+			}
+		}
+		]
+	});	
+
 	// themes-link
 	$('#themes-link').on('click',function (e) {
 		e.preventDefault();

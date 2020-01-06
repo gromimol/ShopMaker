@@ -1148,7 +1148,8 @@
 		margin-bottom: 30px;
 	}
 	.features__img{
-		margin-bottom: 20px;
+		height: 90px;
+		padding-bottom: 20px;
 	}
 	.slide1__title{
 		font-size: 32px;
@@ -1249,6 +1250,39 @@
 		left: 50%;
 		transform: translateX(-50%);
 	}
+	.feature__item{
+		margin-bottom: 30px;
+	}
+	.features__title{
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+	.features__descr{
+		font-size: 14px;
+	}
+	.features-slider .slick-dots{
+		bottom: 0;
+	}
+	.features__note{
+		font-size: 1.5rem;
+		br{
+			display: none;
+		}
+	}
+	.subscribe-btn{
+		height: 22px;
+		font-size: 8px;
+		.text{
+			padding: 0 10px;
+		}
+		.ico{
+			width: 30px;
+			img{
+				width: 10px;
+			}
+		}
+	}
+
 }
 // 568px
 @media(max-width: 480px){
