@@ -1,6 +1,8 @@
 .service{
-	background-image: linear-gradient(-213deg, #777987 0%, #1a1b1f 100%);
-	padding-bottom: 150px;
+	background:#11213c url('../img/bg/service-bg.jpg') 100% top no-repeat;
+	background-size: cover;
+	padding-top: 30px;
+	padding-bottom: 140px;
 }
 .service__list.flex{
 	justify-content: center;
@@ -9,6 +11,24 @@
 		padding: 0 20px;
 		text-align: center;
 		margin-bottom: 60px;
+		&:hover{
+			.service__img{
+				border-color: transparent;
+				.cls-1{
+					fill: $blue
+				}
+				.hover_arrows{
+					opacity: 1;
+					transform: scale(1) rotate(-90deg);
+				}
+			}
+			.service__title{
+				color: var(--blue);
+			}
+			.service__descr{
+				color: #fff
+			}
+		}
 	}
 }
 .service__img{
@@ -34,28 +54,35 @@
 	.cls-1{
 		transition: all .2s;
 	}
-	&:hover {
-		border-color: transparent;
-		.cls-1{
-			fill: $blue
-		}
-		.hover_arrows{
-			opacity: 1;
-			transform: scale(1) rotate(-90deg);
-		}
-	}
 }
 .service__title{
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 1.875rem;
-	font-weight: 400;
+	color: #bbbdcb;
+	text-transform: capitalize;
+	font-size: 1.5rem;
+	font-weight: 300;
 	line-height: 1;
+	padding-bottom: 15px;
 	margin-bottom: 25px;
+	position: relative;
+	transition: color .3s;
+	&::after{
+		content: '';
+		width: 30px;
+		height: 1px;
+		background-color: currentColor;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	b{
+		font-weight: 700;
+	}
 }
 .service__descr{
-	font-size: .95rem;
-	font-weight: 400;
-	color: #d9d9d9;
-	line-height: 1.3;
+	font-size: .875rem;
+	font-weight: 300;
+	color: #bbbdcb;
+	line-height: 1.42;
+	transition: color .3s;
 }

@@ -53,11 +53,13 @@ $('.js-close, #overlay').on('click',function (e) {
 })
 
 // when submit success. Example, without  ajax
-$('.btn-container .btn').on('click',function (e) {
+$('.touch-form__content .btn-decor').on('click',function (e) {
 	e.preventDefault();
 
+	$('.touch-form').addClass('active');
 	$('.touch-form__thanks').addClass('active');
 	setTimeout(function () {
+		$('.touch-form').removeClass('active');
 		$('.touch-form__thanks').removeClass('active');
 	}, 3000)
 });

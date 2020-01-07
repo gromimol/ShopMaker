@@ -1,15 +1,48 @@
 .touch-form{
 	padding-top: 65px;
+	position: relative;
+	&::before{
+		content: '';
+		width: 100%;
+		height: 3px;
+		background-image: linear-gradient(to right, #262642 0%, rgba(38, 38, 66, 0.76) 24%, rgba(38, 38, 66, 0.5) 50%, rgba(255, 255, 255, 0.15) 85%, rgba(255, 255, 255, 0) 100%);
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		z-index: 2;
+	}
+	&::after{
+		content: '';
+		width: 42.15rem;
+		height: 23.375rem;
+		background:transparent url('../img/bg/bottom-limes.png') 100% 100% no-repeat;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+	.bg-text{
+		font-size: 11.5vw;
+		z-index: 1;
+		transition: all .3s;
+	}
+	&.active{
+		.bg-text{
+			opacity: 0;
+		}
+	}
 }
-.touch-form__img,
 .touch-form__form{
+	width: 50%;
+	max-width: 590px;
+}
+.touch-form__img{
 	width: 50%;
 }
 .touch-form__img{
 	img{
 		position: relative;
 		display: block;
-		left: -35%;
+		left: -22%;
 	}
 }
 .touch-form__form{
@@ -17,19 +50,22 @@
 	flex-direction: column;
 	justify-content: center;
 	position: relative;
-	background-color: #fff;
+	padding-bottom: 150px;
 	z-index: 2;
+	.btn-decor{
+		padding-left: 3em;
+		padding-right: 3em;
+		transform: translate(1em, 2.5rem);
+	}
 }
 .touch-form__title{
-	font-size: 70px;
+	font-size: 3.125rem;
 	line-height: 1.3;
-	text-transform: uppercase;
-	font-weight: 900;
-	background-image: linear-gradient(-226deg, #e12694 0%, #0096ff 70%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	color: #0096ff;
-	margin-bottom: 0;
+	font-weight: 300;
+	margin-bottom: 2em;
+	b{
+		font-weight: 700;
+	}
 	span{
 		display: block;
 		
@@ -80,12 +116,12 @@
 		visibility: visible;
 	}
 	.touch-form__title{
-		margin-bottom: 0;
+		margin-bottom: 5px;
 	}
 	p{
-		font-size: 30px;
+		font-size: 24px;
 		line-height: 1.3;
-		font-weight: 200;
+		font-weight: 400;
 	}
 }
 .thanks-ico{

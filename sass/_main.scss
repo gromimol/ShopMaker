@@ -67,7 +67,7 @@ body{
 .title{
 	font-size: 3.125rem;
 	font-weight: 300;
-	padding: 2em 0;
+	padding: 1.9em 0;
 	text-align: center;
 	&--white{
 		color: #fff;
@@ -161,7 +161,9 @@ body{
 button{
 	background-color: transparent;
 }
-
+.svg-sprite{
+	display: none;
+}
 
 
 
