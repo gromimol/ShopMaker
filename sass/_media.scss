@@ -1373,21 +1373,20 @@
 		display: none;
 	}
 	.main-screen{
-		height: 630px;
+		height: calc(100vh - 66px);
 	}
 	
 	.slider__right{
 		padding-bottom: 0;
 	}
 
+
 }
 @media(max-width: 380px){
 	.slide3-img{
 		object-position: 85% 50%;
 	}
-	.main-screen{
-		height: 600px;
-	}
+	
 }
 @media(max-width: 350px){
 	.slide2, .slide1, .slide3{
@@ -1441,9 +1440,6 @@
 	}
 	.slide1 .container .btn{
 		transform: translateY(10%);
-	}
-	.main-screen{
-		height: 550px;
 	}
 	.header .menu{
 		width: 270px;
