@@ -232,6 +232,7 @@ END RESETT CSS
   float: left;
   height: 100%;
   min-height: 1px;
+  outline: none !important;
   display: none; }
   [dir="rtl"] .slick-slide {
     float: right; }
@@ -6329,17 +6330,18 @@ button {
 
   .mob-btn {
     display: block;
-    width: 25px; }
+    width: 40px; }
     .mob-btn span {
       display: block;
       height: 2px;
-      margin-bottom: 5px;
+      margin-bottom: 7px;
       border-radius: 4px;
-      background-color: #0096ff;
+      background-color: #000;
       -webkit-transition: all .3s;
       transition: all .3s; }
-      .mob-btn span:nth-child(2) {
-        background-color: #0844b3;
+      .mob-btn span:first-child {
+        width: 50%; }
+      .mob-btn span:last-child {
         width: 75%; }
 
   .header {
@@ -6354,6 +6356,10 @@ button {
       color: #fff; }
     .header .menu .btn--border {
       color: #567aff; }
+    .header .logo {
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1; }
 
   .menu-open {
     overflow: hidden; }

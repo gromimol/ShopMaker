@@ -591,16 +591,18 @@
 	}
 	.mob-btn{
 		display: block;
-		width: 25px;
+		width: 40px;
 		span{
 			display: block;
 			height: 2px;
-			margin-bottom: 5px;
+			margin-bottom: 7px;
 			border-radius: 4px;
-			background-color: #0096ff;
+			background-color: #000;
 			transition: all .3s;
-			&:nth-child(2){
-				background-color: #0844b3;
+			&:first-child{
+				width: 50%;
+			}
+			&:last-child{
 				width: 75%;
 			}
 		}
@@ -622,6 +624,9 @@
 			.btn--border{
 				color: #567aff
 			}
+		}
+		.logo{
+			flex-grow: 1;
 		}
 	}
 	.menu-open{
